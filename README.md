@@ -12,7 +12,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: []
+- Live Site URL: [Click here!](https://cajereta.github.io/Planets-fact-site/)
 
 
 ### Built with
@@ -21,6 +21,7 @@ Users should be able to:
 - React
 - Flexbox
 - Responsiveness in mind after I made all the layout and completely forgot that the challenge had a "mobile" view
+- A little bit of styled components so I can use variables
 
 ### Built with
 - The site has little to no animations for the time being.
