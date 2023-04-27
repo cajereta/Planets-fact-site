@@ -1,0 +1,90 @@
+.cards {
+
+  display: flex;
+  color: white;
+  text-align: left;
+  margin-top: 2vh;
+  width: 76vw;
+  padding-top: 1vh;
+  flex-direction: column;
+  margin-left: 15vw;
+  margin-right: 8vw;
+  font-family: Antonio;
+  text-transform: uppercase;
+  justify-content: space-evenly;
+}
+
+.card {
+  display: flex;
+  padding: 1.25rem;
+  width: 80%;
+  height: 3vh;
+  border: 1px solid white;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.main {
+  font-weight: 700;
+  font-size: 0.65rem;
+  color: rgb(183, 185, 201);
+}
+
+.data {
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 1.3;
+  letter-spacing: -0.09375rem;
+}
+
+//////////////////////////////////////////////
+@media (min-width:48em) {
+  .cards {
+    margin-top: 0rem;
+    width: 76vw;
+    flex-direction: row;
+    margin-left: 12vw;
+    margin-right: 8vw;
+  }
+
+  .card {
+    padding: 1.25rem;
+    width: 18%;
+    height: 6rem;
+    flex-direction: column;
+
+    align-items: start;
+  }
+
+  .main {
+    font-size: 0.85rem;
+  }
+
+  .data {
+    font-size: 1.75rem;
+    line-height: 1.3;
+    padding-top: 0.5rem;
+  }
+
+}
+
+@media (min-width:78em) {
+  .cards {
+    margin-top: 1rem;
+    width: 76vw;
+    padding-top: 1rem;
+    margin-left: 11.91vw;
+    gap: 1.05vw
+  }
+
+  .main {
+    font-size: 0.85rem;
+  }
+
+  .data {
+    font-size: 2.5rem;
+
+  }
+
+}

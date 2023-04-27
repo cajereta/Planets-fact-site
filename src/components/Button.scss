@@ -1,0 +1,50 @@
+button {
+  text-align: start;
+  padding: 1rem;
+  font-size: 0.6625rem;
+  background-color: var(--main-color);
+
+  a {
+    display: none;
+    padding: 0 1.5rem 0 0.5rem;
+  }
+
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.15rem;
+
+
+  &:hover {
+    background-color: rgb(49, 49, 69) !important;
+    border-color: rgb(49, 49, 69);
+  }
+}
+
+@media (min-width:48em) {
+  button {
+    text-align: start;
+    padding: 1rem;
+
+    font-size: 0.9rem;
+
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.15rem;
+
+
+    &:hover {
+      background-color: rgb(49, 49, 69);
+      border-color: rgb(49, 49, 69);
+    }
+
+    a {
+      display: inline;
+      padding: 0 1.5rem 0 0.5rem;
+    }
+  }
+
+}

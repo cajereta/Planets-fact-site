@@ -1,0 +1,246 @@
+:root {
+  --main-color: red
+}
+
+.global {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  color: white;
+  margin: 0rem auto 1rem;
+  min-height: 50vh;
+  max-height: 65vh;
+  min-width: 100vw;
+
+}
+
+.buttons.bottom {
+  display: none;
+}
+
+.img {
+  display: flex;
+  width: 50%;
+  margin-top: 2rem;
+  order: 1;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+
+  .main {
+    margin-left: 1rem;
+    max-width: 65%;
+    max-height: 65%;
+    z-index: 5;
+  }
+
+  .geology {
+    position: absolute;
+    z-index: 40;
+    max-width: 30%;
+    left: 37.5%;
+    top: 45%;
+  }
+}
+
+.info {
+  width: 80%;
+  text-align: center;
+  order: 2;
+  margin: 0 auto;
+
+  .title {
+    font-family: Antonio;
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .description {
+    margin-bottom: 1rem;
+    font-weight: 400;
+    font-size: 0.75rem;
+  }
+
+  .source {
+    margin-bottom: 1rem;
+    font-size: 0.85rem;
+    color: rgb(132, 132, 134);
+
+    a {
+      font-weight: bold;
+      text-decoration: underline;
+      color: rgb(132, 132, 134);
+    }
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 20px;
+    order: -1
+  }
+
+}
+
+.buttons.top {
+  display: flex;
+  width: 100%;
+  gap: 0px;
+  height: 4rem;
+  order: -1;
+  justify-content: center;
+
+  .selected {
+    border-bottom: 2px var(--main-color) solid !important;
+  }
+
+
+  button {
+    background-color: transparent !important;
+  }
+}
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+@media (min-width:48em) {
+  .container {
+    flex-direction: column;
+    width: 80vw;
+    min-height: 60vh;
+    max-height: 65vh;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+
+  }
+
+  .img {
+    width: 35%;
+    margin-top: 1rem;
+    order: 1;
+    margin-bottom: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+
+
+    .main {
+      max-width: 75%;
+      max-height: 75%;
+    }
+
+    .geology {
+      width: 35%;
+      left: 37%;
+      top: 50%;
+    }
+
+  }
+
+
+
+  .info {
+    display: flex;
+    width: 73.2vw;
+    text-align: left;
+    order: 1;
+
+    .info-container {
+      width: 100%;
+      margin-right: 3vw;
+
+    }
+
+    .title {
+      font-size: 4.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .description {
+      font-size: 1rem;
+    }
+
+    .buttons.bottom {
+      display: flex;
+      margin-top: 0.5rem;
+      width: 62%;
+      order: 2;
+    }
+  }
+
+  .buttons.top {
+    display: none;
+  }
+
+  .source {
+    font-size: 1rem;
+  }
+
+}
+
+@media (min-width:78em) {
+  .container {
+    margin: 6rem 6vw 4rem 11vw;
+    min-height: 45vh;
+    max-height: 50vh;
+    width: 80%;
+    flex-direction: row;
+  }
+
+  .img {
+    width: 45%;
+    margin-top: 2rem;
+    margin-left: 0;
+    margin-right: 0;
+
+    .main {
+      max-width: 85%;
+      max-height: 85%;
+    }
+
+    .geology {
+      max-width: 25%;
+      width: 25%;
+      left: 38.5%;
+      top: 50%;
+    }
+  }
+
+  .info {
+    width: 30%;
+    text-align: left;
+    flex-direction: column;
+    margin-left: 0;
+
+    .title {
+      font-family: Antonio;
+      text-transform: uppercase;
+      font-size: 4.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .description {
+      margin-bottom: 1rem;
+      font-weight: 400;
+      font-size: 1rem;
+    }
+
+    .buttons {
+      gap: 20px;
+      width: 100%;
+    }
+
+    .buttons.bottom {
+      display: flex;
+      width: 100%;
+      margin-top: 5vh;
+      order: 2;
+    }
+  }
+}

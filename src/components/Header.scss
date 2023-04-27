@@ -1,0 +1,51 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 1.35rem;
+  text-transform: uppercase;
+  align-items: center;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  border-bottom: 1px solid grey;
+  text-align: center;
+}
+
+.title {
+  font-family: Antonio;
+  font-weight: bold;
+  font-size: 1.5rem;
+  letter-spacing: -0.05rem;
+  color: white
+}
+
+.planets {
+  display: none;
+  gap: 2rem;
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: rgb(183, 185, 201);
+
+}
+
+.planet {
+  display: flex;
+  color: rgb(183, 185, 201);
+  text-decoration: none;
+  justify-content: space-between;
+}
+
+.active {
+  padding-bottom: 2px;
+  border-bottom: 2px solid var(--main-color);
+}
+
+@media (min-width:48em) {
+  .planets {
+    display: flex;
+  }
+
+  .burger-header {
+    display: none
+  }
+
+}
